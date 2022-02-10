@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Yeti Player</title>
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/gaminglnk/static/img/favicon.png" type="image/png">
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gaminglnk/static@master/plyr/style.css" />
+<style>
+  :root {
+  --plyr-color-main: #FFAE05;
+    --plyr-video-control-color	:#FFFFFF;
+}
+.yeti-player {
+  max-width: 1920px;
+  max-height: 1080px;
+  border-radius: 7px;
+}
+.responsive {
+ width: 100%;
+ height: auto;
+}
+body {
+ background-size: cover;
+ min-height: 100%;
+ background-color: #c4c1c1;
+}
+</style>
+
+</head>
+
+<body>
+<!--Add a Simple HTML5 Video tag-->
+<div class="responsive" id="video">
+  <video style="object-fit: cover;"
+            class="yeti-player"
+            controls=""
+            playsinline=""
+            preload="none"
+            poster="sample.jpg">
+       
+            <!-- HD Source -->
+            <source size="720"
+                    type="video/mp4" 
+                    src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" />
+       
+            <!-- SD Source -->
+            <source size="576"
+                    type="video/mp4"
+                    src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" />
+       
+            <!-- Captions  -->
+            <track default=""
+                   label="English"
+                   kind="captions"
+                   srclang="en"
+                   src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" />
+       
+            Your browser does not support the HTML5 video tag.
+     </video>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/gaminglnk/static@master/plyr/script.js"></script>
+<script>
+var controls = [
+    'play-large',
+    'rewind', // 10 sec back.
+    'play', // Play/pause playback.
+    'fast-forward', // 10 sec forward.
+    'progress', // The progress bar.
+    'current-time', // The current time of playback
+    'duration', // The full duration of the media
+    'mute',
+    'settings', // Settings menu.
+    'airplay', // Airplay (For safari only)
+    'fullscreen' // Toggle fullscreen.
+    // 'download', // Download button for media
+    // 'restart',
+    // 'pip', // Picture-in-picture
+];
+const player = new Plyr('.yeti-player', {
+    controls });
+</script>
+</body>
+</html>
