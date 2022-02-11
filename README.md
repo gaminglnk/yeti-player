@@ -9,8 +9,9 @@ In order to use this player you'll have to add the CSS, Js, Loader Js and HTML f
 ```html
 <video style="object-fit: cover;"
             class="yeti-player"
-            controls=""
-            playsinline=""
+            crossorigin
+            controls
+            playsinline
             preload="none"
             poster="sample.jpg">
        
