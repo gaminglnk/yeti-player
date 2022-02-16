@@ -42,7 +42,7 @@ In order to use this player you'll have to add the CSS, Js, Loader Js and HTML f
 ## CSS
 You can install the stylesheet using this code :
 ```html
-<style>@import url(https://cdn.jsdelivr.net/gh/gaminglnk/static/plyr/style.css);</style>
+<style>@import url(https://cdn.jsdelivr.net/gh/gaminglnk/static/plyr/player.css);</style>
 ```
 ...or use this if above doesn't work :
 ```html
@@ -51,7 +51,7 @@ You can install the stylesheet using this code :
 ## JavaScript
 You can install the javascript using this code before closing ```</body>```
 ```html
-<script src="https://cdn.jsdelivr.net/gh/gaminglnk/static/plyr/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gaminglnk/static/plyr/player.js"></script>
 ```
 ...or use this if above doesn't work :
 ```html
