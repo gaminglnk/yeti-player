@@ -1,9 +1,8 @@
-## Modified [Yeti Player]
+# Modified [Yeti Player]
 This is a modified version of Plyr with a yellow theme.
 
 [Checkout the demo](https://codepen.io/gaminglnk/full/BamRLrW). This is specially for ```HTML5 Video Player```.
 
-# Installation
 In order to use this player you'll have to add the CSS, Js, Loader Js and HTML from below, in your HTML page.
 ## HTML5 Video
 ```html
